@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FemCare</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./tail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <header class="absolute w-full bg-transparent p-4 shadow-md z-10">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold text-white">FemCare</a>
+            <ul class="hidden md:flex space-x-4">
+                <li><a href="#home" class="text-white hover:text-gray-800">Home</a></li>
+                <li><a href="#products" class="text-white hover:text-gray-800">Products</a></li>
+                <li><a href="#relief" class="text-white hover:text-gray-800">Relief</a></li>
+                <li><a href="#tracker" class="text-white hover:text-gray-800">Tracker</a></li>
+                <li><a href="#contact" class="text-white hover:text-gray-800">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-cover bg-center h-screen bg-red-500" style="background-image: url('https://www.helpingwomenperiod.org/wp-content/uploads/2018/01/home.jpg');">
+        <div class="absolute inset-0 bg-gray-900 bg-opacity-50 flex flex-col items-center justify-center text-center">
+            <h1 class="text-4xl font-bold text-white mb-4">Welcome to FemCare</h1>
+            <p class="text-lg text-white">Everything you need for your comfort and well-being</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Shop Categories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product Card -->
+                <div class="bg-gray-200 p-4 rounded-lg shadow-md hover:zoom transition-transform duration-300">
+                    <img src="https://cdn-prod.medicalnewstoday.com/content/images/articles/325/325790/menstrual-hygiene-products.jpg" alt="Product" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Menstrual Needs</h3>
+                    <p>pads, cloths, tampons and cups</p>
+                </div>
+                <!-- Repeat for other products -->
+                <div class="bg-gray-200 p-4 rounded-lg shadow-md hover:zoom transition-transform duration-300">
+                    <img src="https://www.shutterstock.com/image-photo/hygiene-daily-panty-liners-on-600nw-2498713693.jpg" alt="Product" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Daily Liners</h3>
+                    <p>Regular liners, Thin liners, Thick liners</p>
+                </div>
+                <div class="bg-gray-200 p-4 rounded-lg shadow-md hover:zoom transition-transform duration-300">
+                    <img src="https://www.ecoladies.com.au/cdn/shop/products/IMG_1833_800x.jpg?v=1645512001" alt="Product" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Period underwears</h3>
+                    <p>Reusable period underwear, Disposable underwear, Reusable pads</p>
+                </div>
+                <div class="bg-gray-200 p-4 rounded-lg shadow-md hover:zoom transition-transform duration-300">
+                    <img src="https://cdn.shopify.com/s/files/1/0291/0614/3310/files/leakage.jpg?v=1663941440" alt="Product" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Bladder Leak Protection</h3>
+                    <p>pads, pull-up pants, underpads</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Period Care Section -->
+    <section id="relief" class="py-16 bg-pink-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center">Period Care</h2>
+            
+            <!-- Pain Relief Products -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold mb-4">Pain Relief Products</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <img src="https://deodap.in/cdn/shop/products/3_5a850ce2-45f4-4679-967b-85d29e5d3827_700x700.jpg?v=1686756304" alt="Hotbag" class="w-full h-80 object-cover rounded-lg mb-4 shadow-md hover:zoom transition-transform duration-300">
+                        <h4 class="text-xl font-semibold mb-2">Hotbag</h4>
+                        <p>Price: $50.00</p>
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 mt-2">Add to Cart</button>
+                    </div>
+                    <!-- Repeat for other products -->
+                    <div class="bg-white p-4 rounded-lg">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2023/4/300707429/FS/VM/QJ/76045593/period-pain-relief-belt-portable-cordless-heating-pad-for-menstrual-cramps.jpg" alt="Hotbag" class="w-full h-80 object-cover rounded-lg mb-4 shadow-md hover:zoom transition-transform duration-300">
+                        <h4 class="text-xl font-semibold mb-2">Pain Relief Device</h4>
+                        <p>Price: $35.00</p>
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 mt-2">Add to Cart</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg">
+                        <img src="https://i.ebayimg.com/images/g/IscAAOSwTQpijLOA/s-l1600.jpg" alt="Hotbag" class="w-full h-80 object-cover rounded-lg mb-4 shadow-md hover:zoom transition-transform duration-300">
+                        <h4 class="text-xl font-semibold mb-2">Cramp comfort Heat patches</h4>
+                        <p>Price: $90.XX</p>
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 mt-2">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Food Recommendations -->
+            <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Do You Need Food Recommendations?</h2>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300" id="food-recommendations-toggle">See Recommendations</button>
+            <div id="recommendations" class="mt-8 hidden">
+                <h3 class="text-xl font-semibold mb-4">Food Recommendations for your problem</h3>
+                <div class="container mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Column 1 -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg shadow-md hover:zoom transition-transform duration-300">
+                            <h3 class="text-xl font-semibold mb-4">For Cramping</h3>
+                            <p class="text-justify">Berries, tomatoes, pineapple, leafy green vegetables, almonds, walnuts, fatty fish, and spices like turmeric, ginger, or garlic, Dairy products, leafy greens, nuts, chocolate</p>
+                        </div>
+                        <!-- Column 2 -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg shadow-md hover:zoom transition-transform duration-300">
+                            <h3 class="text-xl font-semibold mb-4">For Bloating</h3>
+                            <p class="text-justify">bananas, water, fennel seeds, sweet potatoes,tomatoes, Dark chocolate,Oats, Cucumber,watermelon, pineapple, peaches, Lemons, celery, berries, zucchini, turmeric, peppermint, green tea, parsley, tomatoes, kiwi, and brown rice.and asparagus</p>
+                        </div>
+                        <!-- Column 3 -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg shadow-md hover:zoom transition-transform duration-300">
+                            <h3 class="text-xl font-semibold mb-4">For Fatigue</h3>
+                            <p class="text-justify">Spinach, red meat, lentils, quinoa, tofu, oranges, bell peppers, broccoli, strawberries, almonds, pumpkin seeds, brown rice, whole wheat bread, legumes, salmon, mackerel, chia seeds, flaxseeds, eggs, Greek yogurt, chicken breast, beans.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Pain Relief Tips -->
+    <section id="relief" class="py-10 bg-pink-300">
+    <div class="mb-8">
+        <h3 class="text-2xl font-semibold mb-10 text-center">Tips and Advices</h3>
+        <div class="scroll-horizontal">
+            <div class="inline-block w-80 bg-white p-4 rounded-lg shadow-md mr-4">
+                <img height="90px" width="250px" src="https://www.datocms-assets.com/21281/1593070673-blogpostimagelateperiod-1.gif?auto=format&dpr=0.54&w=1400" alt="">
+                <h4 class="text-lg font-semibold mb-2">Choosing a Pad</h4>
+                <p><a href="">20 min read</a></p>
+            </div>
+            <!-- Repeat for other tips -->
+            <div class="inline-block w-80 bg-white p-4 rounded-lg shadow-md mr-4">
+                <img height="100px" width="250px" src="https://www.datocms-assets.com/21281/1582732995-lets-talk-about-your-flow.png?auto=format&dpr=0.54&w=1400" alt="">
+                <h4 class="text-lg font-semibold mb-2">Period Flow</h4>
+                <p><a href="">10 min read</a></p>
+            </div>
+            <div class="inline-block w-80 bg-white p-4 rounded-lg shadow-md mr-4">
+                <img height="100px" width="300px" src="https://www.datocms-assets.com/21281/1621519693-blogpostperiodiscoming2.png?auto=format&dpr=0.59&w=1280" alt="">
+                <h4 class="text-lg font-semibold mb-2">11 Signs Your Periods is Coming</h4>
+                <p><a href="">11 min read</a></p>
+            </div>
+            <div class="inline-block w-80 bg-white p-4 rounded-lg shadow-md mr-4">
+                <img height="100px" width="200px" src="https://www.datocms-assets.com/21281/1707390971-period-color-1.jpg?auto=format&dpr=0.59&w=1280" alt="">
+                <h4 class="text-lg font-semibold mb-2">What does the color of period <br>blood mean?</h4>
+                <p><a href="">9 min read</a></p>
+            </div>
+            <div class="inline-block w-80 bg-white p-4 rounded-lg shadow-md mr-4">
+                <img height="100px" width="255px"  src="https://www.datocms-assets.com/21281/1622017586-callaly-products-hands.jpg?auto=format&dpr=0.59&w=1280" alt="">
+                <h4 class="text-lg font-semibold mb-2">5 ways to Prepare for your Period</h4>
+                <p><a href="">15 min read</a></p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Period Tracker Section -->
+    <section id="tracker" class="py-16 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center">Period Tracker</h2>
+            <form class="max-w-lg mx-auto space-y-4">
+                <label for="start-date" class="block font-semibold">Start Date:</label>
+                <input type="date" id="start-date" name="start-date" class="w-full p-2 border border-gray-300 rounded-lg" required>
+                <label for="cycle-length" class="block font-semibold">Cycle Length (days):</label>
+                <input type="number" id="cycle-length" name="cycle-length" class="w-full p-2 border border-gray-300 rounded-lg" required>
+                <button type="submit" class="bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="text-white bg-gray-300 py-0">
+        <div class="container mx-auto text-center"><br>
+            <div class="flex justify-center space-x-4 mb-4 ">
+                <a href="#" class="text-white hover:text-gray-400"><i class="fa-brands fa-instagram fa-2xl" style="color: #23232a;"></i></a>
+                <a href="#" class="text-white hover:text-gray-400"><i class="fa-brands fa-facebook fa-2xl" style="color: #23232a;"></i></a>
+                <a href="#" class="text-white hover:text-gray-400"><i class="fa-brands fa-linkedin fa-2xl" style="color: #23232a;"></i></a>
+                <a href="#" class="text-white hover:text-gray-400"><i class="fa-brands fa-youtube fa-2xl" style="color: #23232a;"></i></a>
+                <a href="#" class="text-white hover:text-gray-400"><i class="fa-brands fa-twitter fa-2xl" style="color: #23232a;"></i></a>
+            </div><br>
+            <p class="text-black"><b>Download the App</b></p>
+            <img width="200px" height="200px" class="mx-auto" src="https://www.naturalcycles.com/icons/play-store-en-US.svg" alt="">
+            <img width="200px" height="200px" class="mx-auto" src="https://www.naturalcycles.com/icons/app-store-en-US.svg" alt="">
+            <div class="bg-gray-800">
+                <p></p>
+            </div>
+        </div>
+        <p class="text-center bg-gray-800"> <br>&copy 2024 FemCare. All rights reserved by Gouri</p>
+    </footer>
+
+    <script>
+        document.getElementById('food-recommendations-toggle').addEventListener('click', function() {
+            var recommendations = document.getElementById('recommendations');
+            if (recommendations.classList.contains('hidden')) {
+                recommendations.classList.remove('hidden');
+            } else {
+                recommendations.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</html>
